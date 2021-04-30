@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
     private Button num9;
     private Button num0;
     private Button buttonDot;
+    private Button buttonC;
+    private Button buttonZ;
+    private Button buttonPrc;
+    private Button buttonD;
+    private Button buttonX;
+    private Button buttonM;
+    private Button buttonPlus;
+    private Button buttonR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
         num8 = findViewById(R.id.num8);
         num9 = findViewById(R.id.num9);
         buttonDot = findViewById(R.id.buttonDot);
+        buttonC = findViewById(R.id.buttonC);
+        buttonZ = findViewById(R.id.buttonZ);
+        buttonPrc = findViewById(R.id.buttonPrc);
+        buttonD = findViewById(R.id.buttonD);
+        buttonX = findViewById(R.id.buttonX);
+        buttonM = findViewById(R.id.buttonM);
+        buttonPlus = findViewById(R.id.buttonPlus);
+        buttonR = findViewById(R.id.buttonR);
     }
 
     private void buttonClick() {
@@ -112,6 +128,54 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 output.setText(".");
+            }
+        });
+        buttonC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("0");
+            }
+        });
+        buttonZ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("-");
+            }
+        });
+        buttonPrc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("%");
+            }
+        });
+        buttonD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("/");
+            }
+        });
+        buttonX.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("x");
+            }
+        });
+        buttonM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("-");
+            }
+        });
+        buttonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("+");
+            }
+        });
+        buttonR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("=");
             }
         });
 
